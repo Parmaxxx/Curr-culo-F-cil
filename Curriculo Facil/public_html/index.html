@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Currículo Fácil</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/contraste.js"></script>
+        <script src="js/fonte.js"></script>
+    </head>
+    <body>
+           <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!"><img src="img/Logo-semfundo.png" alt="Logo Currículo Fácil" height="50" width="200"/></a>
+                <img src="img/contraste.png" alt="Alterar Contraste" height="20" width="20" onclick="alternarAltoContraste()">
+                <img src="img/aumentar.png" alt="Alterar Contraste" height="20" width="20" onclick="aumentarFonte()">
+                <img src="img/diminuir.png" alt="Alterar Contraste" height="20" width="20" onclick="diminuirFonte()">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-items">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="curriculo.html">Currículo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quemsomos.html">Quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dicas.html">Dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="indicadores.html">Indicadores</a></li>
+                   
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="banner col-lg-7"><img class=" rounded mb-4 mb-lg-0" src="img/Logo-semnome.png" alt="..." width="300" height="300"></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Currículo </h1>
+                    <p>Crie seu currículo Online</p>
+                    <a class="btn btn-primary" href="curriculo.html">Começar!</a>
+                </div>
+            </div>
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                <div class="card-body"><p class="text-white m-0">Fatecano para Fatecano. #JuntosSomosMaisFortes</p><br><p>Inscreva-se na nossa newsletter<form action="javascript:void(0)">
+  <input type="email" id="emailInput" placeholder="Digite seu e-mail" required>
+  <button type="submit" class="btn btn-primary btn-sm" onclick="enviarResposta()">Enviar</button>
+</form>
+        <script>
+  function enviarResposta() {
+    var email = document.getElementById('emailInput').value;
+    alert('Recebemos o seu e-mail: ' + email + '. Obrigado!');
+    // Aqui você pode adicionar código para redefinir o campo de entrada ou realizar outras ações, se necessário.
+  }
+</script></div>
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Dicas</h2>
+                            <p class="card-text">Saiba como se comportar, vestimenta...tudo sobre entrevistas.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="dicas.html">Acessar</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Índices</h2>
+                            <p class="card-text">Números quantitativos sobre empregabilidade no Brasil</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="indicadores.html">Acessar</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Cursos</h2>
+                            <p class="card-text">Cursos extracurrículares para enriquecer seu currículo.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="cursos.html">Acessar</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">FatecZL-Desenvolvimento de software para multiplataforma 2023-1</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+      <script type="text/javascript" src="js/banner.js"></script>
+    </body>
+</html>

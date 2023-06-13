@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Crie seu Currículo</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js" integrity="sha512-ToRWKKOvhBSS8EtqSflysM/S7v9bB9V0X3B1+E7xo7XZBEZCPL3VX5SFIp8zxY19r7Sz0svqQVbAOx+QcLQSAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+        <script src="js/script.js"></script>
+        <script src="js/tooltip.js"></script>
+           <script src="js/contraste.js"></script>
+        <script src="js/fonte.js"></script>
+    </head>
+    <body>
+           <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+        <!-- Responsive navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><img src="img/Logo-semfundo.png" alt="Logo Currículo Fácil" height="50" width="200"/></a>
+                  <img src="img/contraste.png" alt="Alterar Contraste" height="20" width="20" onclick="alternarAltoContraste()">
+                <img src="img/aumentar.png" alt="Alterar Contraste" height="20" width="20" onclick="aumentarFonte()">
+                <img src="img/diminuir.png" alt="Alterar Contraste" height="20" width="20" onclick="diminuirFonte()">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-items">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="curriculo.html">Currículo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quemsomos.html">Quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Dicas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="indicadores.html">Indicadores</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div id="container">
+            <h1 style="text-align: center;">Criar Currículo</h1>
+
+    <div id="formContainer" style="text-align: center;" >
+      <form id="formDadosPessoais">
+        <label for="nome"><span onMouseOver="toolTip('Insira aqui seu nome com as primeiras letras maiusculas sempre', 200)" onMouseOut="toolTip()">Nome:</span></label><br>
+        <input type="text" id="nome" name="nome" required autofocus><br>
+
+        <label for="email"><span onMouseOver="toolTip('O nome de um e-mail profissional deve ser curto e simples, a fim de que seja fácil de se lembrar e escrever. ', 300)" onMouseOut="toolTip()">Email:</span></label><br>
+        <input type="email" id="email" name="email" required placeholder="email@exemplo.com"><br>
+
+        <label for="telefone"><span onMouseOver="toolTip('Insira aqui seu telefone com DDD.', 300)" onMouseOut="toolTip()">Telefone:</span></label><br>
+        <input type="tel" id="telefone" name="telefone" required placeholder="(11)00000000"><br>
+
+        <label for="endereco"><span onMouseOver="toolTip('Insira apenas estado e cidade, por boas praticas não coloca-se o endereço completo.', 300)" onMouseOut="toolTip()">Endereço:</span></label><br>
+        <input type="text" id="endereco" name="endereco" required placeholder="São Paulo-Garulhos"><br>
+
+        <label for="objetivo"><span onMouseOver="toolTip('O objetivo tem a ver com o que você espera da empresa, no sentido do seu crescimento e da sua carreira.', 300)" onMouseOut="toolTip()">Objetivo:</span></label><br>
+        <textarea id="objetivo" name="objetivo" rows="5" cols="50" style="resize: none;" required placeholder="EX. estou em busca de desafios que me permitam uma entrada no mercado de trabalho com grande desenvolvimento e foco na geração de resultados"></textarea><br>
+
+        <label for="formacaoAcademica"><span onMouseOver="toolTip('Formação acadêmica é o histórico de sua escolaridade. Ou seja é tudo o que você já estudou na vida, começando pelo ensino fundamental e médio, passando talvez pelo ensino técnico e superior, que corresponde à graduação.', 400)" onMouseOut="toolTip()">Formação Acadêmica:</span></label><br>
+        <textarea id="formacaoAcademica" name="formacaoAcademica" rows="5" cols="50" style="resize: none;" required placeholder="Graduação (nome do curso, exemplo: Desenvolvimento de Software Multiplataforma) concluído em 2023 na Faculdade de Tecnologia de São Paulo (FATEC). "></textarea><br>
+
+        <label for="experienciaProfissional"><span onMouseOver="toolTip('Aqui coloque a sua experiência começando pela mais recente. Informe no currículo a empresa, o seu cargo, as datas de trabalho e descreva suas atividades. Coloque caso exista no máximo as 3 mais relevantes experiências.', 400)" onMouseOut="toolTip()">Experiência Profissional:</span></label><br>
+        <textarea id="experienciaProfissional" name="experienciaProfissional" rows="5" cols="50" style="resize: none;" required placeholder="Desenvolvedor de sites.
+                  Empresa Sites.co.
+                  Abril de 2020 até o presente.
+                  Responsabilidades
+                  Acompanhei as métricas das páginas de clientes no Facebook, Instagram e Twitter;
+Colaborei com a equipe de desenvolvimento, incluindo designers;
+Criei paginas para os clientes da empresa;
+Principais conquistas
+
+Criei estratégias que aumentaram o acesso as páginas em 20%"></textarea><br><br>
+
+        <label for="modelo">Modelo de Currículo:</label>
+        <select id="modelo" name="modelo">
+            <option value ="Escolha">Escolha um modelo</option>
+            <option value="modeloCurriculo.html">Modelo 1</option>
+            <option value="modeloCurriculo2.html">Modelo 2</option>
+        </select><br><br>
+      </form>
+         <button id="gerarPDF" type="button" onclick="gerarPDF()" class="btn btn-primary btn-sm">Baixe seu PDF</button><br>
+    <iframe class="modelo" id="iframe" width="500" height="450"  src=""></iframe>
+    </div>
+  </div>
+  
+
+   
+  
+
+
+  
+  
+  <br><br><br>
+
+
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">FatecZL-Desenvolvimento de software para multiplataforma 2023-1</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+         
+    </body>
+</html>
