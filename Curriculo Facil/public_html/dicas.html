@@ -12,6 +12,8 @@
         <link href="css/styles.css" rel="stylesheet" />
            <script src="js/contraste.js"></script>
         <script src="js/fonte.js"></script>
+        <script src="js/playVideo.js"></script>
+
     </head>
     <body>
            <div vw class="enabled">
@@ -36,10 +38,11 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-items">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="curriculo.html">Currículo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="quemsomos.html">Quem somos</a></li>
+                        
                         <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Dicas</a></li>
                         <li class="nav-item"><a class="nav-link" href="indicadores.html">Indicadores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quemsomos.html">Quem somos</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,11 +50,10 @@
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="row gx-4 gx-lg-5 align-it ems-center my-5">
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="img/logofatec.png" alt="..." /></div>
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light">Dicas </h1>
-                    <p>detalhes que são decisivos no processo seletivo</p>
+                    <h1 class="font-weight-light">Dicas que podem fazer a diferença em seu processo seletivo </h1>
                     
                 </div>
             </div>
@@ -59,58 +61,66 @@
             <!-- Content Row-->
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Comportamento</h2>
-                            <p class="card-text">Demonstre profissionalismo em todas as interações, seja cortês, respeitoso e mantenha uma postura adequada.
-Esteja sempre pontual para entrevistas e compromissos, mostrando comprometimento e respeito pelo tempo dos outros.
-Mostre entusiasmo e energia durante as entrevistas, transmitindo seu interesse e motivação pela vaga.
-Tenha habilidades de comunicação eficazes, ouvindo atentamente, fazendo perguntas relevantes e expressando suas ideias de forma clara e articulada.
-Demonstre adaptabilidade e flexibilidade, destacando sua capacidade de lidar com mudanças e se ajustar a novas situações.
-Trabalhe bem em equipe, respeitando e colaborando com os colegas, demonstrando habilidades de liderança quando necessário.
-Exiba ética profissional, demonstrando integridade, responsabilidade e confidencialidade no trabalho.</p>
-                  
+                  <div class="card h-100">
+                    <div class="card-body">
+                        <div class="dev-card-container">
+                            <div class="dev-card" onclick="playVideo(this)">
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SjOiLLm2Epk" title="YouTube video player" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="info">
+                                <h3>VESTIMENTA</h3>
+                                <p>O que sua vestimenta diz sobre você!!!</p>
+                            </div>
+                            </div>
+
                         </div>
-                        <div class="card-footer">Profissionalismo, atitude positiva, pontualidade, contato visual, habilidades de trabalho em equipe, adaptabilidade, ética profissional.</div>
                     </div>
+                  </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Vestimenta</h2>
-                            <p class="card-text">Vista-se adequadamente de acordo com o ambiente de trabalho e a cultura da empresa, demonstrando respeito pela ocasião.
-Opte por uma aparência profissional, escolhendo roupas limpas, bem passadas e de bom gosto.
-Evite roupas casuais demais ou extravagantes, pois podem transmitir uma imagem inadequada.
-Conheça o dress code da empresa e, se necessário, adapte seu estilo para se alinhar à cultura organizacional.
-Cuide de sua higiene pessoal e apresentação, mantendo cabelos, unhas e barba (se aplicável) arrumados e limpos.
-Lembre-se de que é melhor estar um pouco mais formal do que casual demais, especialmente em entrevistas ou ocasiões mais formais.</p>
-                       
+                      <div class="card-body">
+                        <div class="dev-card-container">
+                            <div class="dev-card" onclick="playVideo(this)">
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1gQMXwBwC44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="info">
+                                <h3>COMPORTAMENTO</h3>
+                                <p>Como se comportar pra ir bem na sua entrevista!</p>
+                            </div>
+                            </div>
+
                         </div>
-                        <div class="card-footer">Adequação ao ambiente, cultura da empresa, aparência profissional, bem arrumado, evitar roupas casuais ou extravagantes.</div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-5">
+                  </div>
+                
+                
+                  <div class="col-md-4 mb-5">
                     <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Linguagem</h2>
-                            <p class="card-text">Utilize uma linguagem clara e objetiva em seu currículo, destacando suas habilidades técnicas e experiências relevantes.
-Evite jargões ou terminologias muito técnicas, a menos que esteja se candidatando a uma posição que as exija especificamente.
-Comunique suas realizações de forma precisa e quantificável, destacando resultados tangíveis e impactos positivos alcançados em projetos anteriores.
-Demonstre habilidades de escrita e comunicação eficazes, revisando cuidadosamente seu currículo e outras correspondências.
-Seja capaz de explicar conceitos complexos de forma simples e compreensível durante entrevistas técnicas.
-Mostre interesse em aprender e aprimorar suas habilidades, demonstrando familiaridade com as tecnologias e tendências atuais do setor.
-Seja cortês e respeitoso ao se comunicar com o recrutador ou entrevistador, transmitindo uma atitude profissional e positiva.</p>
-                           
+                      <div class="card-body">
+                        <div class="dev-card-container">
+                            <div class="dev-card" onclick="playVideo(this)">
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YR63bZDYpw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="info">
+                                <h3>COMUNICAÇÃO</h3>
+                                <p>Como utilizar a comunicação a seu a favor!</p>
+                            </div>
+                            </div>
+
                         </div>
-                        <div class="card-footer">Clareza, objetividade, linguagem técnica, habilidades relevantes, projetos concluídos, resultados alcançados, evitar jargões desnecessários ou terminologias complexas, comunicação eficaz.</div>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                  </div>
+              </div>
         <div class="container px-4 px-lg-5">
               <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><span onMouseOver="toolTip('Cadastre-se Clicando aqui', 200)" onMouseOut="toolTip()"><a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.linkedin.com/feed/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fhome"><img src="img/logolinkedin.png" alt="linkedin"></a></span></div>
-                <div class="col-lg-5">
+                <div class="col-lg-7-link"><span onMouseOver="toolTip('Cadastre-se Clicando aqui', 200)" onMouseOut="toolTip()"><a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.linkedin.com/feed/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fhome"><img src="img/logolinkedin-removebg-preview.png" alt="linkedin"></a></span></div>
+                <div class="col-lg-5-link">
                     <h1 class="font-weight-light">O LinkedIn é uma poderosa rede social profissional que conecta talentos, oportunidades e conhecimentos em um ambiente dedicado ao crescimento e desenvolvimento de carreiras.</h1>
                     
                 </div>
@@ -118,45 +128,51 @@ Seja cortês e respeitoso ao se comunicar com o recrutador ou entrevistador, tra
              
            
          <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Otimização de Perfil</h2>
-                            <p class="card-text">Utilize palavras-chave relevantes para a sua área de atuação ao criar seu perfil no LinkedIn. Isso ajudará a aumentar a visibilidade do seu perfil quando recrutadores e empregadores estiverem fazendo pesquisas específicas.
-Destaque suas habilidades, experiências e realizações de forma clara e concisa. Utilize bullet points ou frases curtas para facilitar a leitura e compreensão do seu perfil.
-Inclua uma foto de perfil profissional e adicione informações adicionais, como certificações, prêmios e idiomas que você domina. Isso ajudará a fortalecer sua credibilidade e diferenciá-lo dos demais candidatos.</p>
-                  
+            <div class="col-md-4 mb-5">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="dev-card-dicas" onclick="window.open('https://www.linkedin.com/pulse/5-dicas-incr%C3%ADveis-de-como-fazer-um-bom-networking-linkedin-leite/?originalSubdomain=pt', '_blank')">
+                        <img src="img/networking-on-linkedin-600x318.webp">
+                        <div class="info">
+                          <h3>NETWORKING E ENGAJAMENTO</h3>
+                          <P>como construir sua rede de networking!!</P>
+                          
                         </div>
-                        
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Networking e Engajamento</h2>
-                            <p class="card-text">Conecte-se com profissionais da sua área de interesse, incluindo colegas de trabalho, ex-colegas, professores e pessoas influentes. Faça uma pesquisa proativa e envie convites personalizados, explicando o motivo pelo qual você gostaria de se conectar.
-Participe de grupos relevantes e contribua com discussões e compartilhamento de conhecimento. Isso permitirá que você se envolva com profissionais que possuem interesses e experiências semelhantes.
-Interaja com o conteúdo de outros usuários, como comentar, curtir e compartilhar publicações relevantes. Isso ajudará a construir relacionamentos e aumentar sua visibilidade na plataforma.</p>
-                       
+                  <div class="card h-100">
+                    <div class="card-body">
+                        <div class="dev-card-dicas" onclick="window.open('https://www.linkedin.com/pulse/5-dicas-incr%C3%ADveis-de-como-fazer-um-bom-networking-linkedin-leite/?originalSubdomain=pt', '_blank')">
+                        <img src="img/linkedin-como-otimizar-find-1536x1302.webp">
+                        <div class="info">
+                          <h3>OTIMIZAÇÃO DE PERFIL</h3>
+                          <p>Dicas de como otimizar seu perfil no Linkedin!!</p>
+                          
                         </div>
-                      
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Conteúdo e Visibilidade</h2>
-                            <p class="card-text">Compartilhe regularmente conteúdo relevante relacionado à sua área de atuação. Isso pode incluir artigos, estudos de caso, insights do setor ou até mesmo dicas e truques que podem beneficiar outros profissionais.
-Publique artigos, insights e opiniões para demonstrar sua expertise e atrair a atenção de outros profissionais. Isso permitirá que você seja reconhecido como um especialista na sua área e aumentará sua credibilidade.
-Aproveite recursos multimídia, como vídeos, apresentações e portfólio, para enriquecer seu perfil. Esses elementos visuais podem ajudar a transmitir suas habilidades e conquistas de forma mais impactante, cativando a atenção dos visitantes do seu perfil.</p>
-                           
+                  <div class="card h-100">
+                    <div class="card-body">
+                        <div class="dev-card-dicas" onclick="window.open('https://tmjuntos.com.br/carreira/6-dicas-para-melhorar-o-linkedin-e-aumentar-sua-visibilidade/', '_blank')">
+                        <img src="img/visibilidade.jpeg">
+                        <div class="info">
+                          <h3>CONTEÚDO E VISIBILIDADE</h3>
+                          <P>Aumente a visibilidade de seus perfil com essas dicas!!!!!</P>
+                          
                         </div>
-                        
+                      </div>
                     </div>
+                  </div>
                 </div>
             </div>
         
-        
+            </div>
         
         </div>
         <!-- Footer-->
