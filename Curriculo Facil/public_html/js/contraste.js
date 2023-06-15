@@ -15,7 +15,7 @@ function alternarAltoContraste() {
 
 function ativarAltoContraste() {
   var root = document.documentElement;
-  root.style.setProperty('--bs-body-color', '#52e309');
+  root.style.setProperty('--bs-body-color', '#FFFFFF');
   root.style.setProperty('--bs-body-bg', '#000');
   root.style.setProperty('--bs-link-color', '#60e0df');
   root.style.setProperty('--bs-link-hover-color', '#4682B4');
@@ -77,6 +77,10 @@ function ativarAltoContraste() {
   root.style.setProperty('border-radius', 'var(--bs-card-border-radius)');
   document.body.classList.toggle('alto-contraste');
   document.querySelector("body").setAttribute("id", "contrasteAtivo");
+
+  var body = document.querySelector("body");
+  body.style.backgroundImage = "url('/img/backgroundEscuro.png')";
+  
 
   var footerText= document.querySelector("footer p");
   footerText.classList.remove("text-white");
@@ -152,6 +156,9 @@ function desativarAltoContraste() {
   root.style.removeProperty('border');
   root.style.removeProperty('border-radius');
   document.querySelector("body").removeAttribute("id");
+
+  var body = document.querySelector("body");
+  body.style.backgroundImage = "url('/img/interlaced.png')";
 
   var footerText= document.querySelector("footer p");
   footerText.classList.remove("text-black");
